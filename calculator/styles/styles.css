@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 2%;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, #c9c9c9, #eee);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    min-height: 75vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid-container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: #b0b0b0;
+    color: #eee;
+}
+
+.grid-container > button:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+.grid-container > .operator {
+    background: #659fcf;
+}
+
+.grid-container > .equalsB {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    background-color: #659fcf;
+    grid-column: span 2;
+}
+
+.grid-container > .ac {
+    background-color: #74cf8d;
+    grid-column: span 2;
+}
+
+.grid-container > .del {
+    background-color: #74cf8d;
+}
+
+.grid-container > .dot {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.grid-container > .output {
+    grid-column: 1 / -1;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.grid-container > .output > .previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.grid-container > .output >  .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
