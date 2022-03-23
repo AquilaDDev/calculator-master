@@ -1,7 +1,7 @@
 # Calculator
 
-Projeto de calculadora que realiza operações matemáticas básicas criada seguindo alguns tutoriais.
+Calculator project that performs basic mathematical operations created following some tutorials.
 
 ![Calculator](/calculator/img/calculator.png)
 
-Sinta-se livre para usar o codigo para cria a sua!
+Feel free to use the code to create your own!
