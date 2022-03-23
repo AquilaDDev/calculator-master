@@ -7,24 +7,34 @@
 }
 
 body {
-    background: linear-gradient(to left, #c9c9c9, #eee);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 
 .grid-container {
     display: grid;
     justify-content: center;
-    min-height: 75vh;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    background: #111;
+    grid-template-columns: repeat(4,85px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 85px);
+    border: 2px solid #111;
+    border-radius: 2rem;
+    width: 360px;
+    height: 640px;
+    padding: 10px 0 10px 0;
 }
 
 .grid-container > button {
     cursor: pointer;
     font-size: 2rem;
-    border: none;
+    border: 2px solid #111;
     border-radius: 0.5rem;
+    width: 74px;
+    height: 74px;
     outline: none;
     background-color: #b0b0b0;
+    box-shadow:  5px 5px rgba(255,255,255,0.1);
     color: #eee;
 }
 
@@ -44,11 +54,13 @@ body {
     border-bottom-right-radius: 2rem;
     background-color: #659fcf;
     grid-column: span 2;
+    width: 158px;
 }
 
 .grid-container > .ac {
     background-color: #74cf8d;
     grid-column: span 2;
+    width: 158px;
 }
 
 .grid-container > .del {
@@ -80,6 +92,7 @@ body {
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    box-shadow:  5px 5px rgba(255,255,255,0.1);
 }
 
 .grid-container > .output > .previous-operand {
